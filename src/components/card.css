@@ -1,0 +1,114 @@
+
+.card{
+    display:flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+
+}
+
+.page{
+     background-color: #f6f6f6;
+}
+
+.page input{
+    padding: 15px;
+    border-radius: 20px;
+    width: 300px;
+    border: none;
+    background-color: #f6f6f6;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 40px;
+    padding: 20px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+}
+
+.options button{
+    margin-left: 100px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+}
+
+.options button:hover{
+    background-color: rgb(231, 56, 70);
+    color:#fff;
+}
+
+.data{
+   background-color:#fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 450px;
+    display: flex;
+}
+
+.imdiv{
+    height: 105px;
+    background-color: #fff7f7;
+    padding: 3px;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+ 
+.im{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.data h4{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#p{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.para{
+    display:flex;
+
+}
+
+.para button{
+    background-color: rgb(231, 56, 70);
+    border-radius: 5px;
+    color: aliceblue;
+    border: none;
+    margin: 20px;
+    margin-left:70px;
+    width: 120px;
+    height: 30px;
+}
+
+.text{
+    font-size: medium;
+    color: rgb(118, 121, 121);
+}
+
+
+#btn{
+    border-radius: 2px;
+    background-color: rgb(242, 60, 60);
+    color: aliceblue;
+}
+
