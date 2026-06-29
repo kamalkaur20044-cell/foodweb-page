@@ -43,8 +43,9 @@ const Card = () => {
                     <form>
                         <input placeholder='Search food items...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
                     </form>
+                
                 </div>
-
+            
 
                 <div className="card">
 

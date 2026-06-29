@@ -1,12 +1,21 @@
 
 .card{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    gap:40px;
-    justify-content: center;
-
+    margin-top: 30px;
 }
 
+.data{
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    transition: 0.3s ease;
+}
+
+.data:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 .page{
      background-color: #f6f6f6;
 }
@@ -17,14 +26,14 @@
     width: 300px;
     border: none;
     background-color: #f6f6f6;
-
 }
 
 .nav{
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
-    height: 40px;
+    align-items: center;
+    background-color: #ec6e6e;
+    height: 30px;
     padding: 20px;
 }
 
@@ -50,10 +59,10 @@
 
 .data{
    background-color:#fff;
-    margin: 20px;
-    padding: 20px;
+    margin:15px;
+    padding: 10px;
     border-radius: 20px;
-    width: 450px;
+    width: 400px;
     display: flex;
 }
 
@@ -68,8 +77,8 @@
  
 .im{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 
 }
 
@@ -94,14 +103,14 @@
     border-radius: 5px;
     color: aliceblue;
     border: none;
-    margin: 20px;
+    margin-top: 15px;
     margin-left:70px;
     width: 120px;
     height: 30px;
 }
 
 .text{
-    font-size: medium;
+    font-size: 14px;
     color: rgb(118, 121, 121);
 }
 
