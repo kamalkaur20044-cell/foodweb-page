@@ -122,3 +122,133 @@
     color: aliceblue;
 }
 
+/* Tablet screens */
+@media (max-width: 1024px) {
+
+    .nav{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .page input{
+        background-color: #fff;
+        margin: 2px;
+    }
+
+    .options{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .options button{
+        margin-left: 0;
+    }
+
+    .page input{
+        width: 250px;
+    }
+
+    .card{
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .data{
+        width: 60%;
+    }
+}
+
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .options{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.options button{
+    margin-left: 0;
+}
+
+    .page input{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .data{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imdiv{
+        margin: 0 0 15px 0;
+    }
+
+    .para{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .para button{
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    
+    .card{
+        margin-top: 0;
+    }
+
+    .page input{
+        width: 90%;
+    }
+
+    .options{
+        width: 100%;
+    }
+
+    .options button{
+        width: 90px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .data{
+        padding: 15px;
+    }
+
+    .im{
+        width: 80px;
+        height: 80px;
+    }
+
+    .imdiv{
+        height: 80px;
+    }
+
+    #p{
+        font-size: 18px;
+    }
+
+    .para button{
+        width: 110px;
+        height: 35px;
+    }
+}
