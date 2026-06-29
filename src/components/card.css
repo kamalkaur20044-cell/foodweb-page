@@ -32,9 +32,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ec6e6e;
     height: 30px;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .options{
@@ -52,9 +53,9 @@
     height: 35px;
 }
 
-.options button:hover{
+.options button.active{
     background-color: rgb(231, 56, 70);
-    color:#fff;
+    color: white;
 }
 
 .data{

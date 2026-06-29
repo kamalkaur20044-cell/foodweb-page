@@ -5,25 +5,32 @@ import { useState } from 'react'
 
 const Card = () => {
 
+    const [category, setCategory] = useState("all");
+
     const getAll = () => {
-        console.log("all")
+        setCategory("all");
     }
 
     const getB = () => {
-        console.log("breakfast");
+        setCategory("breakfast");
     }
     const getL = () => {
-        console.log("breakfast");
+        setCategory("lunch");
     }
     const getD = () => {
-        console.log("breakfast");
+        setCategory("dinner");
     }
 
     const [search, setSearch] = useState("");
 
     const filteredFood = foodData.filter((item) => {
-        console.log(item.name);
-        return item.name.includes(search);
+        const matchSearch =
+            item.name.toLowerCase().includes(search.toLowerCase());
+
+        const matchCategory =
+            category === "all" || item.type === category;
+
+        return matchSearch && matchCategory;
     });
 
 
@@ -34,18 +41,18 @@ const Card = () => {
 
                 <div className='nav'>
                     <div className='options'>
-                        <button onClick={getAll}>All</button>
-                        <button onClick={getB}>Breakfast</button>
-                        <button onClick={getL}>Lunch</button>
-                        <button onClick={getD}>Dinner</button>
+                        <button className={category === "all" ? "active" : ""}  onClick={getAll}>All</button>
+                        <button  className={category === "breakfast" ? "active" : ""} onClick={getB}>Breakfast</button>
+                        <button className={category === "lunch" ? "active" : ""} onClick={getL}>Lunch</button>
+                        <button  className={category === "dinner" ? "active" : ""} onClick={getD}>Dinner</button>
                     </div>
 
                     <form>
                         <input placeholder='Search food items...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
                     </form>
-                
+
                 </div>
-            
+
 
                 <div className="card">
 
